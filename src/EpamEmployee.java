@@ -6,5 +6,6 @@ class EpamEmployee extends Employee {
     @Override
     public int getBonus() {
         return super.getBonus();
+
     }
 }

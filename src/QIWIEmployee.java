@@ -4,6 +4,7 @@ class QIWIEmployee extends Employee {
     public QIWIEmployee(boolean kpi) {
         this.kpi = kpi;
     }
+
     @Override
     public String toString() {
         return "QIWIEmployee";
@@ -16,7 +17,7 @@ class QIWIEmployee extends Employee {
     @Override
     public int getBonus() {
         if (okKpi()) {
-            return (int) (8 * super.getBonus());
+            return (8 * super.getBonus());
         } else {
             return 0;
         }

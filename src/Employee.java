@@ -8,8 +8,8 @@ public class Employee {
         }
         return (int) (averageProfit / profits.length);
     }
+
     public int[] getProfits() {
         return profits;
     }
-
 }

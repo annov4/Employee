@@ -23,9 +23,11 @@ public class Main {
             System.out.println("Бонус: " + bonus + "\n");
         }
     }
+
     public static String printEmployees(Employee employee) {
         return employee.toString();
     }
+
     public static String arrayToString(int[] array) {
         StringBuilder p = new StringBuilder();
         for (int i = 0; i < array.length; i++) {
