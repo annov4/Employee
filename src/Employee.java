@@ -12,4 +12,9 @@ public class Employee {
     public int[] getProfits() {
         return profits;
     }
+
+    @Override
+    public String toString() {
+        return "Employee";
+    }
 }
