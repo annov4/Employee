@@ -15,9 +15,8 @@ class QIWIEmployee extends Employee {
 
     @Override
     public int getBonus() {
-        double averageProfit = calculateAverageProfit(getProfits());
         if (okKpi()) {
-            return (int) (8 * averageProfit);
+            return (int) (8 * super.getBonus());
         } else {
             return 0;
         }

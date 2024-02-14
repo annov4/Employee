@@ -5,8 +5,6 @@ class EpamEmployee extends Employee {
     }
     @Override
     public int getBonus() {
-
-        double bonus = calculateAverageProfit(getProfits());
-        return (int) bonus;
+        return super.getBonus();
     }
 }

@@ -11,8 +11,7 @@ class SberEmployee extends Employee {
 
     @Override
     public int getBonus() {
-        double averageProfit = calculateAverageProfit(getProfits());
-        double bonus = averageProfit * SUCCESSFACTOR * evaluationFactor;
+        double bonus = super.getBonus() * SUCCESSFACTOR * evaluationFactor;
         return (int) bonus;
     }
 }
