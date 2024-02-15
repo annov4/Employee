@@ -15,28 +15,11 @@ public class Main {
         for (int i = 0; i < employees.length; i++) {
             employees[i].profits = employeeProfits[i];
 
-            int[] profits = employees[i].getProfits();
-            int bonus = employees[i].getBonus();
-
-            System.out.println(printEmployees((employees[i])) + ":");
-            System.out.println("Зарплата: " + arrayToString(profits));
-            System.out.println("Бонус: " + bonus + "\n");
+            System.out.println(printEmployees((employees[i])));
         }
     }
-
     public static String printEmployees(Employee employee) {
         return employee.toString();
-    }
-
-    public static String arrayToString(int[] array) {
-        StringBuilder p = new StringBuilder();
-        for (int i = 0; i < array.length; i++) {
-            p.append(array[i]);
-            if (i != (array.length - 1)) {
-                p.append(", ");
-            }
-        }
-        return p.toString();
     }
 }
 

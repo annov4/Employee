@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Employee {
     int[] profits;
 
@@ -9,12 +11,9 @@ public class Employee {
         return (int) (averageProfit / profits.length);
     }
 
-    public int[] getProfits() {
-        return profits;
-    }
-
     @Override
     public String toString() {
-        return "Employee";
+        return getClass().getSimpleName() + " " + Arrays.toString(profits) + "\n" +
+                "Bonus: " + getBonus() + "\n";
     }
 }

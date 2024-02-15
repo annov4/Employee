@@ -1,13 +1,10 @@
+import java.util.Arrays;
+
 class QIWIEmployee extends Employee {
     private boolean kpi;
 
     public QIWIEmployee(boolean kpi) {
         this.kpi = kpi;
-    }
-
-    @Override
-    public String toString() {
-        return "QIWIEmployee";
     }
 
     public boolean okKpi() {
